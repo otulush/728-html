@@ -1,19 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Це заголовок сайту. ЗАдається за допомогою тега title</title>
+    <title>Це заголовок сайту. Задається за допомогою тега title</title>
 </head>
+
 <body>
-    <h1>Це перша фраза новачка поміщена в тег h1 - заголовок першого рівня</h1>
-    <h2>Це заголовок 2-го рівня</h2>
-    <h3>Це заголовок 3-го рівня</h3>
-    <h4>Це заголовок 4-го рівня</h4>
-    <h5>Це заголовок 5-го рівня</h5>
-    <h6>Це заголовок 6-го рівня</h6>
-    <p>Pharagraf</p>
-    <img src="./img/by.png" alt="baby yoga">
+    <main>
+        <h1 id="first-element">Hello world! - Це перша фраза новачка поміщена в тег h1 - заголовок першого рівня</h1>
+        <h2>&lt;h2&gt; - Це заголовок 2-го рівня</h2>
+        <h3>&lt;h3&gt; - Це заголовок 3-го рівня</h3>
+        <h4>&lt;h4&gt; - Це заголовок 4-го рівня</h4>
+        <h5>&lt;h5&gt; - Це заголовок 5-го рівня</h5>
+        <h6>&lt;h6&gt; - Це заголовок 6-го рівня</h6>
+        <p>Тег &lt;p&gt; задає абзац</p>
+        <p>Послідовність символів &lt;!--- задає початок коментаря в коді html, а --&gt; його кінець</p>
+        <p>В HTML5 було введено ряд додаткових тегів, що допомагають краще структурувати html сторінки. Це такі теги як:
+            main, header, footer, nav, video, article, section та інші.</p>
+        <p>Тег &lt;br&gt; переносить наступний за ним елемент на новий рядок. </p>
+        <p>Тег img дозволяє показати на сторінці картинку.  Наприклад за допомогою даного коду &lt;img
+            src="./img/by.png" alt="baby yoga"&gt; на сторінку добавляється картинка нижче.
+            Атрибут alt необхідний щоб вивести в місці показу картинки текст, який буде показуватися поки картинка не
+            завантажиться</p>
+        <img src="./img/by.png" alt="baby yoga">
+        <p>Також є можливість заватажити зовнішню картинку. За допомогою коду &lt;img src="./img/by.png" alt="A cute
+            orange cat lying on its back."&gt; заватажиться картинка з сайту <a
+                href="https://www.freecodecamp.org/">https://www.freecodecamp.org/</a></p>
+        <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg"
+            alt="A cute orange cat lying on its back.">
+        <p>Якщо необхідно зробити посилання/перехід на інший сайт чи сторінку це можна зробити за допомогою тегу
+            &lt;a&gt;.
+            Наприклад для посилання на сайт <a href="https://www.freecodecamp.org/">https://www.freecodecamp.org/</a> в
+            попередньому абзаці був використаний код &lt;a href="https://www.freecodecamp.org/"&gt;
+            https://www.freecodecamp.org/ &lt;/a&gt;
+        </p>
+        <p>За допомогою коду <br> &lt;a href="#first-element"&gt; На початок &lt;/a&gt; <br> можна зробити перехід на <a
+                href="#first-element">На початок</a> до елементу h1 що має ідентифікатор #first-element
+            і знаходиться на початку поточного документу</p>
+        <p>Якщо необхідно створити ненумерований список - це можна створити за допомогою тегів ul та li <br>
+            Для прикладу код нижче <br>
+            &lt;ul&gt;<br>
+            &emsp;&lt;li&gt;Перший елемент&lt;/li&gt;<br>
+            &emsp;&lt;li&gt;Другий елемент&lt;/li&gt;<br>
+            &lt;/ul&gt; <br>
+            виведе: <br>
+        <ul>
+            <li>Перший елемент</li>
+            <li>Другий елемент</li>
+        </ul>
+        </p>
+        <p>Якщо необхідно створити нумерований список - це можна створити за допомогою тегів ol та li <br>
+            Для прикладу код нижче <br>
+            &lt;ol&gt;<br>
+            &emsp;&lt;li&gt;Перший елемент&lt;/li&gt;<br>
+            &emsp;&lt;li&gt;Другий елемент&lt;/li&gt;<br>
+            &lt;/ol&gt; <br>
+            виведе: <br>
+        <ol>
+            <li>Перший елемент</li>
+            <li>Другий елемент</li>
+        </ol>
+        </p>
+        <p>
+            В HTML є елементи що дозволяють організувати введення або вибір даних користувачем. <br>
+            Наприклад input <input type="text"> задає текстове поле для вводу. <br>
+            Такі елементи збираються в форми
+        <div id="myform" style="margin-left: 20px;">
+            <h3>Тестова форма</h3>
+            <form action="sp.html">
+                Імʼя <input type="text" placeholder="не обовʼязкове поле"> <br>
+                Псевдонім <input type="text" required placeholder="обовʼязкове поле" > <br>
+                Хочете отримувати листи?
+                <input id="ans-yes" type="radio" name="yes-no">
+                <label for="ans-yes">Так</label>
+                <input id="ans-no" type="radio" name="yes-no">
+                <label for="ans-no">Ні</label> <br>
+                Вкажіть Ваш улюблений колір <br>
+                <label for="ans1"><input id="ans1" type="checkbox" name="chckbx">Червиний</label> <br>
+                <label for="ans2"><input id="ans2" type="checkbox" name="chckbx">Зелений</label> <br>
+                <label for="ans3"><input id="ans3" type="checkbox" name="chckbx">Синій</label> <br>
+                <button type="submit" value="submit">Надіслати</button>
+                <button type="reset" value="reset">Очистити</button>
+            </form>
+        </div>
+        </p>
+        В HTML є єлемент таблиця. 
+        Код нижче <br>
+        &lt;table &gt; <br>
+        &emsp;&lt;tr &gt; <br>
+        &emsp;&emsp;&lt;th &gt;Компанія&lt;/th &gt;<br>
+        &emsp;&emsp;&lt;th &gt;Контакт&lt;/th &gt;<br>
+        &emsp;&emsp;&lt;th &gt;Країна&lt;/th &gt;<br>
+        &emsp;&lt;/tr &gt;<br>
+        &emsp;&lt;tr &gt;<br>
+        &emsp;&emsp;&lt;td &gt;Компанія1&lt;/td &gt;<br>
+        &emsp;&emsp;&lt;td &gt;Контакт1&lt;/td &gt;<br>
+        &emsp;&emsp;&lt;td &gt;Країна1&lt;/td &gt;<br>
+        &emsp;&lt;/tr &gt;<br>
+        &emsp;&lt;tr &gt;
+        &emsp;&emsp;&lt;td &gt;Компанія2 &lt;/td &gt;<br>
+        &emsp;&emsp;&lt;td &gt;Контакт2&lt;/td &gt;<br>
+        &emsp;&emsp;&lt;td &gt;Країна2&lt;/td &gt;<br>
+        &emsp;&lt;/tr &gt;<br>
+       &lt;/table &gt; <br>
+       Покаже наступну таблицю <br>
+       <table>
+        <tr>
+          <th>Компанія</th>
+          <th>Контакт</th>
+          <th>Країна</th>
+        </tr>
+        <tr>
+          <td>Компанія1</td>
+          <td>Котакт1</td>
+          <td>Країна</td>
+        </tr>
+        <tr>
+          <td>Компанія2</td>
+          <td>Контакт2</td>
+          <td>Країна2</td>
+        </tr>
+      </table> 
+        </p>
+
 </body>
+</main>
+
 </html>
